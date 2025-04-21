@@ -65,6 +65,11 @@
       border: 1px solid #ccc;
       border-radius: 8px;
     }
+    .formulario label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+    }
     .formulario button {
       background-color: #a34d79;
       color: white;
@@ -133,8 +138,10 @@
         <option>Pediatría</option>
         <option>Medicina General</option>
       </select>
-      <input type="date" name="Fecha" required placeholder="Fecha">
-      <input type="time" name="Hora" required placeholder="Hora">
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" name="Fecha" required>
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="Hora" required>
       <button type="submit">Agendar</button>
     </form>
     <div id="mensajeExito" class="mensaje-exito">👍 Gracias, tu cita ha sido agendada. ⏳ Redirigiendo al inicio... 🎉 Te contactaremos pronto.</div>
